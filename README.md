@@ -31,7 +31,7 @@ I have trained Label distribution learning model based on ResNet fine-tuing, you
 
 2. put Label distribution learning model under inference/ldl+resnet folder, and run beauty_predict.py
 
-![](./samples/image/output-test7.jpg)
+![](./samples/image/output-test7.png)
 
 -----
 
