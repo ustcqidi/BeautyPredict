@@ -16,18 +16,38 @@ The second paper, recasts facial attractiveness computation as a label distribut
 
 I have trained a five layers CNN model and a Label distribution learning model based on ResNet fine-tuing. The Pearson correlation coefficient is 0.8 and 0.91 respectively, which is tested on the SCUT-FBP5500 dataset.
 
-The trained model files and dataset could be downloaded via follow links:
-- [five layers CNN model](https://pan.baidu.com/s/1f3MdTGFm59QEhBDvM8Vj0Q)
-- [Label distribution learning model](https://pan.baidu.com/s/1_u2iBGAvqP1YvKVR5kRPyA)
-- [dataset](https://pan.baidu.com/s/1-mBxJgaDwgy02th9S0olMA)
-
 ## Demo
 
-## Prepare Data
+## Dependency
+1. Python 3.x
+2. Tensorflow
+3. Keras
+4. numpy
+5. opencv
+6. h5py
 
-## Train
+## How to use
+1. The trained model files could be downloaded via follow links:
+- [five layers CNN model](https://pan.baidu.com/s/1f3MdTGFm59QEhBDvM8Vj0Q)
+- [Label distribution learning model](https://pan.baidu.com/s/1_u2iBGAvqP1YvKVR5kRPyA)
 
-## Predict
+2. put five layers CNN model under inference/cnn_5 folder, and run beauty_predict.py
+
+3. put Label distribution learning model under inference/ldl+resnet folder, and run beauty_predict.py
+
+-----
+
+If you want to train your own model, read the follow part.
+
+## How to train
+1. Prepare Data
+- download [dataset](https://pan.baidu.com/s/1-mBxJgaDwgy02th9S0olMA), unzip and put it under Project Root folder
+- cd train/cnn_5 and run prepare_data.py to prepare data before training 5 layers cnn model
+- cd train/ldl+resnet and run prepare_data.py to prepare data before training label distribution learning model
+
+2. Train
+
+3. Predict
 
 ## References
 1. [SCUT-FBP5500 A Diverse Benchmark Dataset for Multi-Paradigm Facial Beauty Prediction](https://arxiv.org/abs/1801.06345)

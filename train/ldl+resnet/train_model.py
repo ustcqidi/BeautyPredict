@@ -29,7 +29,7 @@ model.add(Dense(5, activation='softmax'))
 model.layers[0].trainable = False
 print (model.summary())
 
-model.load_weights('model-dropout/model-ldl-resnet-base.h5')
+#model.load_weights('model-dropout/model-ldl-resnet-base.h5')
 
 sgd = SGD(lr=0.001, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='kld', optimizer=sgd, metrics=['accuracy'])
