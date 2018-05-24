@@ -49,7 +49,7 @@ If you want to train your own model, read the follow part.
 ![](./train/ldl+resnet/result.png)
 
 3. Predict
-- copy the model file nameed model-ldl-resnet.h5 to inference/ldl+resnet folder, you could call beauty_predict.py to use the model now.
+copy the model file nameed model-ldl-resnet.h5 to inference/ldl+resnet folder, you could call beauty_predict.py to use the model now.
 
 ## References
 1. [SCUT-FBP5500 A Diverse Benchmark Dataset for Multi-Paradigm Facial Beauty Prediction](https://arxiv.org/abs/1801.06345)
