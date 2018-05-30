@@ -62,4 +62,4 @@ history = model.fit(x=train_X, y=train_Y, batch_size=32, callbacks=[earlyStoppin
 # #
 # fig.savefig('performance.png')
 
-model.save_weights('model-dropout/model-ldl-resnet-base.h5')
+model.save_weights('model-dropout/model-ldl-resnet.h5')
